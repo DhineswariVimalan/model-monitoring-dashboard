@@ -9,7 +9,6 @@ from log_utils import log_prediction
 
 st.set_page_config(page_title="Revenue Prediction App with Monitoring",
                    layout="centered")
-
 st.title("Dhineswari Revenue Prediction App with Live Monitoring")
 
 @st.cache_resource
@@ -90,7 +89,6 @@ feedback_score = st.slider(
     key="feedback_score",
 )
 feedback_text = st.text_area("Comments (optional)", key="feedback_text")
-
 # ---------- BUTTON 2: SUBMIT FEEDBACK ----------
 if st.button("Submit Feedback"):
     if not st.session_state["pred_ready"]:
